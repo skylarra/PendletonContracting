@@ -1,0 +1,318 @@
+.outfitReg {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfitMed {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.outfitBold {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#topLogo {
+    margin-top: -30px;
+    display: flex;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+article {
+    margin: 20px;
+}
+
+.bgColor {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.glass {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-self: center;
+    max-width: 700px;
+    padding: 10px 0;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    place-self: center;
+}
+
+.card p {
+    margin-left: 10px;
+}
+
+li {
+    margin-left: 30px;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.figureImg {
+    width: 80%;
+    max-width: 800px;
+    place-self: center;
+    border-radius: 5px;
+}
+
+nav img {
+    width: 120px;
+    height: 120px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index:-100;
+}
+
+.introWords {
+    font-size: 10.5vw;
+    opacity: 0;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.rightNav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.navMenu {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.49);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.navColor {
+    color: #2a2a2a;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border: none;
+    z-index: 1;
+    background-color: inherit;
+}
+
+#estimateBtn {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Ycards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Ycard {
+    width: 500px;
+}
+
+.contactSection {
+    display: flex;
+    justify-content: center;
+}
+ 
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+.contactImg {
+    width: 200px;
+}
+ 
+.aboutImg {
+    max-width: 300px;
+    place-self: center;
+    border-radius: 5px;
+}
+
+.way {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.iconSVG {
+    width: 35px;
+}
+
+.aboutPara {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+    .hidden {
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 0;
+        margin-top: 5px;
+        margin-right: 15vw;
+        padding: 2px;
+        width: 500px;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+    #themeMode {
+        z-index: 99;
+    }
+
+    .navMenu {
+        background: none;
+        border-radius: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+    }
+
+    .introWords {
+        font-size: 11vw;
+    }
+
+    .contactDetails {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .contactWays, .hours {
+        padding: 50px;
+    }
+
+    .aboutPara {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .aboutPara p {
+        max-width: 700px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .nav {
+        margin-right: 30vw;
+    }
+
+    .introWords {
+        font-size: 11.2vw;
+    }
+
+    .sectionHeader h1 {
+        font-size: 3vw;
+    }
+
+}

@@ -1,0 +1,33 @@
+body {
+    background-color: #e7e7e7;
+    color: #2a2a2a;
+}
+
+a {
+    color: #2a2a2a;
+}
+
+.modeColor {
+    color: #196a3c;
+}
+
+#estimateBtn {
+    background-color: #196a3c;
+    color: #e7e7e7;
+}
+
+.bckColor {
+    color: #e7e7e7;
+}
+
+.card, .glass {
+    background-color: rgb(231,231,231, 60%)
+}
+
+.figureImg {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bgColor {
+    background-color: #196a3c;
+}
